@@ -19,7 +19,7 @@ class Calculator {
         document.querySelectorAll('[data-action="operator"]').forEach(button => {
             button.addEventListener('click', () => this.chooseOperation(button.innerText));
         });
-        
+        //EQUALS
         document.querySelector('[data-action="equals"]').addEventListener('click', () => this.compute());
         document.querySelector('[data-action="clear"]').addEventListener('click', () => this.clear());
         document.querySelector('[data-action="delete"]').addEventListener('click', () => this.delete());
