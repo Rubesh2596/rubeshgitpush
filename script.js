@@ -10,12 +10,12 @@ class Calculator {
         
         this.setupEventListeners();
     }
-    
+    //event listeners
     setupEventListeners() {
         document.querySelectorAll('[data-number]').forEach(button => {
             button.addEventListener('click', () => this.appendNumber(button.innerText));
         });
-        
+        //querry selector
         document.querySelectorAll('[data-action="operator"]').forEach(button => {
             button.addEventListener('click', () => this.chooseOperation(button.innerText));
         });
